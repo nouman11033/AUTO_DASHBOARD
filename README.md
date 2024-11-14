@@ -10,28 +10,35 @@
 streamlit run main.py
 
 ```
-App Walkthrough
-Setup Section:
-API Key: Input your OpenAI API key here if not set as an environment variable.
-Model Selection: Choose from available models (gpt-4, gpt-3.5-turbo, or gpt-3.5-turbo-16k).
-Temperature: Set the randomness level for text generation, with values between 0.0 (deterministic) to 1.0 (highly random).
-Data Summarization:
-Dataset Selection: Choose a preloaded dataset, or upload your own CSV or JSON file.
-Summarization Method: Select from options:
-llm: Generates summaries using the LLM.
-default: Provides summaries based on dataset column statistics.
-columns: Summarizes by displaying column names only.
-Goal Selection:
-Generate Goals: Choose the number of goals to generate, or add a custom goal.
-Select Goal: Choose a specific goal for visualization.
-Visualization Library:
-Choose Visualization Library: Select from available libraries (seaborn, matplotlib, plotly).
-Number of Visualizations: Select the number of visualizations to generate for the chosen goal.
-Visualizations:
-Select and View Visualizations: Choose a generated visualization to view or modify.
-Visualization Code: View the Python code for the visualization.
-NLP Customization: Modify the visualization by inputting customization instructions in natural language.
-Customization Options
-Goal Generation: Manually add goals to suit specific insights or analysis.
-Visualization Modifications: Use NLP instructions to update aspects of visualizations such as colors, chart type, and size.
-Add New Datasets: Upload additional datasets to enhance dashboard customization capabilities.
+## App Walkthrough
+
+### Setup Section
+- **API Key**: Enter your OpenAI API key if it's not set as an environment variable.
+- **Model Selection**: Choose a language model from `gpt-4`, `gpt-3.5-turbo`, or `gpt-3.5-turbo-16k`.
+- **Temperature**: Set the creativity level for text generation, ranging from `0.0` (deterministic) to `1.0` (highly random).
+
+### Data Summarization
+- **Dataset Selection**: Choose from preloaded datasets or upload your own CSV or JSON file.
+- **Summarization Method**:
+  - `llm`: Summarizes using the language model with additional details.
+  - `default`: Generates a summary based on dataset column statistics.
+  - `columns`: Uses only the column names for summarization.
+
+### Goal Selection
+- **Generate Goals**: Select the number of goals or add a custom goal for visualization.
+- **Select Goal**: Choose a specific goal for generating visualizations.
+
+### Visualization Library
+- **Choose Visualization Library**: Select a visualization library (`seaborn`, `matplotlib`, or `plotly`).
+- **Number of Visualizations**: Set the number of visualizations to generate based on the chosen goal.
+
+### Visualizations
+- **Select and View Visualizations**: Choose a generated visualization to display or edit.
+- **Visualization Code**: View the underlying Python code for the visualization.
+- **NLP Customization**: Update visualization properties (e.g., color, size) with natural language instructions.
+
+### Customization Options
+- **Goal Generation**: Add custom goals to focus on specific insights.
+- **Visualization Modifications**: Use NLP commands to adjust visual elements, such as chart type or color.
+- **Add New Datasets**: Upload additional datasets to expand dashboard options and customization.
+
